@@ -92,15 +92,16 @@
             transform: translateY(-3px);
             box-shadow: 0 0 50px rgba(124, 58, 237, 0.5);
         }
-        .btn-zip {
-            background: linear-gradient(135deg, #2a2a45, #3a3a5a);
-            color: #e0e0f0;
+        .btn-exe {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: white;
             font-size: 1.2rem;
             padding: 16px 40px;
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
         }
-        .btn-zip:hover {
+        .btn-exe:hover {
             transform: translateY(-3px);
-            background: linear-gradient(135deg, #3a3a5a, #4a4a6a);
+            box-shadow: 0 0 50px rgba(16, 185, 129, 0.5);
         }
         .version-tag {
             display: inline-block;
@@ -432,7 +433,7 @@
             карт, квестов, диалогов и многого другого. Ускоряет разработку в 10 раз.
         </p>
         <div class="hero-buttons">
-            <a href="#download" class="btn btn-download">⬇️ Скачать установщик</a>
+            <a href="#download" class="btn btn-exe">⬇️ Скачать установщик</a>
             <a href="https://github.com/Prodebug/GameDevStudio" target="_blank" class="btn btn-outline">🔗 GitHub</a>
         </div>
     </div>
@@ -442,7 +443,7 @@
                 <span class="mockup-dot dot-red"></span>
                 <span class="mockup-dot dot-yellow"></span>
                 <span class="mockup-dot dot-green"></span>
-                <span style="margin-left:auto;color:#6a6a8a;font-size:0.8rem;">Game Dev Studio v2.0.2</span>
+                <span style="margin-left:auto;color:#6a6a8a;font-size:0.8rem;">Game Dev Studio v2.0.3</span>
             </div>
             <div class="mockup-screen">
                 <span class="highlight">> Запуск генерации...</span><br>
@@ -531,7 +532,7 @@
             <div class="step-content">
                 <strong>Выберите папку и нажмите "Установить"</strong>
                 <br>
-                Лаунчер сам скачает и установит всё необходимое
+                Установщик сам скачает и установит приложение
             </div>
         </div>
         <div class="step">
@@ -554,26 +555,26 @@
             Скачайте Game Dev Studio бесплатно и начните создавать свою игру уже сегодня.
         </p>
         <div class="download-cards">
-            <!-- Карточка 1: Установщик -->
+            <!-- Карточка 1: Установщик (EXE) -->
             <div class="download-card">
                 <div class="icon">📦</div>
                 <h3>Установщик (EXE)</h3>
-                <p>Лёгкий установщик с выбором папки. Сам скачает и установит всё приложение.</p>
-                <a href="https://github.com/Prodebug/GameDevStudio/releases/latest/download/GameDevStudioLauncher.exe" class="btn btn-download">
+                <p>Лёгкий установщик с выбором папки. Сам скачает и установит готовое приложение.</p>
+                <a href="https://github.com/Prodebug/GameDevStudio/releases/latest/download/GameDevStudioLauncher.exe" class="btn btn-exe">
                     ⬇️ Скачать установщик
                 </a>
-                <div class="file-size">Windows 7/8/10/11 • ~30 MB</div>
+                <div class="file-size">Windows 7/8/10/11 • ~15 MB</div>
             </div>
 
-            <!-- Карточка 2: ZIP-архив -->
+            <!-- Карточка 2: Готовое приложение (EXE) -->
             <div class="download-card">
-                <div class="icon">📁</div>
-                <h3>ZIP-архив</h3>
-                <p>Весь проект в одном архиве. Распакуйте и запустите <code>main.py</code></p>
-                <a href="https://github.com/Prodebug/GameDevStudio/releases/latest/download/GameDevStudio.zip" class="btn btn-zip">
-                    📦 Скачать ZIP
+                <div class="icon">🎮</div>
+                <h3>Готовое приложение (EXE)</h3>
+                <p>Полное приложение в одном файле. Скачайте и запускайте без установки.</p>
+                <a href="https://github.com/Prodebug/GameDevStudio/releases/latest/download/GameDevStudio.exe" class="btn btn-download">
+                    ⬇️ Скачать EXE
                 </a>
-                <div class="file-size">Требуется Python 3.8+ • ~50 MB</div>
+                <div class="file-size">Windows 7/8/10/11 • ~60 MB</div>
             </div>
 
             <!-- Карточка 3: GitHub -->
@@ -600,7 +601,7 @@
             <a href="https://github.com/Prodebug/GameDevStudio/releases" target="_blank">Releases</a>
             <a href="#">Документация</a>
         </div>
-        <div class="footer-badge">🟢 v2.0.2</div>
+        <div class="footer-badge">🟢 v2.0.3</div>
         <p style="margin-top:20px;">© 2026 Game Dev Studio. Все права защищены.</p>
     </div>
 </footer>
