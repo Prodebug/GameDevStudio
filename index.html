@@ -92,6 +92,25 @@
             transform: translateY(-3px);
             box-shadow: 0 0 50px rgba(124, 58, 237, 0.5);
         }
+        .btn-zip {
+            background: linear-gradient(135deg, #2a2a45, #3a3a5a);
+            color: #e0e0f0;
+            font-size: 1.2rem;
+            padding: 16px 40px;
+        }
+        .btn-zip:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #3a3a5a, #4a4a6a);
+        }
+        .version-tag {
+            display: inline-block;
+            background: #7c3aed;
+            color: white;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
 
         /* ===== Герой-секция ===== */
         .hero {
@@ -285,7 +304,7 @@
             background: #252540;
             border-radius: 16px;
             padding: 30px;
-            width: 300px;
+            width: 320px;
             border: 1px solid #2a2a4a;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -299,6 +318,7 @@
         }
         .download-card h3 {
             margin-bottom: 10px;
+            font-size: 1.3rem;
         }
         .download-card p {
             color: #b0b0d0;
@@ -307,6 +327,12 @@
         }
         .download-card .btn {
             width: 100%;
+            text-align: center;
+        }
+        .download-card .file-size {
+            font-size: 0.7rem;
+            color: #6a6a8a;
+            margin-top: 10px;
         }
 
         /* ===== Подвал ===== */
@@ -416,7 +442,7 @@
                 <span class="mockup-dot dot-red"></span>
                 <span class="mockup-dot dot-yellow"></span>
                 <span class="mockup-dot dot-green"></span>
-                <span style="margin-left:auto;color:#6a6a8a;font-size:0.8rem;">Game Dev Studio v2.0</span>
+                <span style="margin-left:auto;color:#6a6a8a;font-size:0.8rem;">Game Dev Studio v2.0.2</span>
             </div>
             <div class="mockup-screen">
                 <span class="highlight">> Запуск генерации...</span><br>
@@ -503,7 +529,7 @@
         <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
-                <strong>Нажмите "Установить"</strong>
+                <strong>Выберите папку и нажмите "Установить"</strong>
                 <br>
                 Лаунчер сам скачает и установит всё необходимое
             </div>
@@ -511,7 +537,7 @@
         <div class="step">
             <div class="step-number">4</div>
             <div class="step-content">
-                <strong>Запустите игру!</strong>
+                <strong>Запустите приложение!</strong>
                 <br>
                 <code>Game Dev Studio</code>
                 <br>
@@ -528,27 +554,41 @@
             Скачайте Game Dev Studio бесплатно и начните создавать свою игру уже сегодня.
         </p>
         <div class="download-cards">
+            <!-- Карточка 1: Установщик -->
             <div class="download-card">
                 <div class="icon">📦</div>
                 <h3>Установщик (EXE)</h3>
-                <p>Лёгкий установщик, который сам скачает и установит всё приложение</p>
-                <a href="https://github.com/Prodebug/GameDevStudio/releases/download/v2.0.1/GameDevStudioLauncher.exe" class="btn btn-download">
+                <p>Лёгкий установщик с выбором папки. Сам скачает и установит всё приложение.</p>
+                <a href="https://github.com/Prodebug/GameDevStudio/releases/download/v2.0.2/GameDevStudioLauncher.exe" class="btn btn-download">
                     ⬇️ Скачать установщик
                 </a>
-                <p style="font-size:0.7rem; margin-top:10px; color:#6a6a8a;">Windows 7/8/10/11 • ~30 MB</p>
+                <div class="file-size">Windows 7/8/10/11 • ~30 MB</div>
             </div>
+
+            <!-- Карточка 2: ZIP-архив -->
             <div class="download-card">
-                <div class="icon">💻</div>
-                <h3>Исходный код</h3>
-                <p>Для разработчиков — скачайте исходный код с GitHub</p>
-                <a href="https://github.com/Prodebug/GameDevStudio/archive/refs/heads/main.zip" class="btn" style="background:#2a2a45; color:#e0e0f0;">
+                <div class="icon">📁</div>
+                <h3>ZIP-архив</h3>
+                <p>Весь проект в одном архиве. Распакуйте и запустите <code>main.py</code></p>
+                <a href="https://github.com/Prodebug/GameDevStudio/releases/download/v2.0.2/GameDevStudio.zip" class="btn btn-zip">
                     📦 Скачать ZIP
                 </a>
-                <p style="font-size:0.7rem; margin-top:10px; color:#6a6a8a;">Требуется Python 3.8+</p>
+                <div class="file-size">Требуется Python 3.8+ • ~50 MB</div>
+            </div>
+
+            <!-- Карточка 3: GitHub -->
+            <div class="download-card">
+                <div class="icon">🐙</div>
+                <h3>Исходный код</h3>
+                <p>Для разработчиков — полный исходный код на GitHub</p>
+                <a href="https://github.com/Prodebug/GameDevStudio" target="_blank" class="btn" style="background:#2a2a45; color:#e0e0f0;">
+                    🔗 Перейти на GitHub
+                </a>
+                <div class="file-size">⭐ Поставьте звезду, если нравится!</div>
             </div>
         </div>
         <br>
-        <span style="color:#6a6a8a;">или посетите репозиторий на <a href="https://github.com/Prodebug/GameDevStudio" target="_blank">GitHub</a></span>
+        <span style="color:#6a6a8a;">Все версии доступны в <a href="https://github.com/Prodebug/GameDevStudio/releases" target="_blank">Releases на GitHub</a></span>
     </div>
 </section>
 
@@ -557,10 +597,10 @@
         <p style="margin-bottom:15px;">🎮 Game Dev Studio – создано с ❤️ для разработчиков игр</p>
         <div class="footer-links">
             <a href="https://github.com/Prodebug/GameDevStudio" target="_blank">GitHub</a>
+            <a href="https://github.com/Prodebug/GameDevStudio/releases" target="_blank">Releases</a>
             <a href="#">Документация</a>
-            <a href="#">Сообщество</a>
         </div>
-        <div class="footer-badge">🟢 v2.0.1</div>
+        <div class="footer-badge">🟢 v2.0.2</div>
         <p style="margin-top:20px;">© 2026 Game Dev Studio. Все права защищены.</p>
     </div>
 </footer>
